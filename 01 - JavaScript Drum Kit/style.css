@@ -1,13 +1,13 @@
 html {
   font-size: 10px;
-  background: url('https://picsum.photos/1920?grayscale&blur=8') bottom center;
+  background: url('https://picsum.photos/1080?grayscale&blur=4') bottom center;
   background-size: cover;
 }
 
 body,html {
   margin: 0;
   padding: 0;
-  font-family: "Arial Narrow", "Helvetica", sans-serif;
+  font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
 }
 
 .keys {
@@ -19,33 +19,36 @@ body,html {
 }
 
 .key {
-  border: .4rem solid black;
+  border: .3rem solid #FF10F0;
   border-radius: 1rem;
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
-  transition: all .07s ease;
+  transition: all .09s ease;
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(116,116,116,0.8);
-  text-shadow: 0 0 .5rem #121212;
+  /* background: rgba(92,34,89,0.4); */
+  background-image: linear-gradient(180deg, rgba(112, 39, 108, 0.3), rgba(163, 46, 157, 0.6));
+  text-shadow: 0 0 .5rem #402c3f;
+  backdrop-filter: blur(10px);
 }
 
 .playing {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  transform: scale(1.2);
+  border-color: #fcccfa;
+  box-shadow: 0 0 1rem #fcccfa;
 }
 
 kbd {
   display: block;
   font-size: 4rem;
+  font-family: 'Barlow', 'Arial', sans-serif;
 }
 
 .sound {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #fcccfa;
 }
