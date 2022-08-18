@@ -20,16 +20,9 @@ function setDate() {
 
 setInterval(setDate, 1000);
 
-//function setTime() {
-//  const dt = new Date();
-//  const time = dt.getHours() + ':' + dt.getMinutes() + ':' + dt.getSeconds();
-//  document.getElementById('digitalTime').value = time;
-//}
-
 function setTime() {
     const dt = new Date();
     const time = dt.toLocaleTimeString('en-US');
-    //document.querySelector('.digitalTime') = time;
     document.getElementById('digitalTime').innerHTML = time;
 }
 
