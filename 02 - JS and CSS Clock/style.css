@@ -1,0 +1,87 @@
+html {
+    background: url('https://picsum.photos/1080');
+    background-size: cover;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    font-size: 10px;
+  }
+
+body {
+    font-size: 2rem;
+    min-height: 100vh;
+    display: flex;   
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.container {
+    margin: auto;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    display: block;
+    border: 6px solid rgb(237, 232, 235);
+    border-radius: 50%;
+    background: repeating-conic-gradient(rgba(216, 249, 255, 0.04) 0%, rgba(178, 243, 255, 0.02) 8.3%);
+    backdrop-filter: blur(10px);
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 2px rgba(227, 25, 197, 0.15),
+      inset 0 0 0 1px rgba(227, 174, 210, 1),
+      inset 0 0 6px rgba(227, 25, 197, 0.5),
+      0 0 6px rgba(227, 25, 197, 0.25);
+  }
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: rgb(227, 25, 197);
+    border-radius: 100px 0px 0px 100px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0, 0.35, 0.7, 1);
+    box-shadow: 0 0 3px rgba(227, 25, 197, 0.5);
+  }
+
+.hour-hand {
+    background: rgba(227, 25, 197, 0.35);
+    width: 30%;
+  }
+
+.min-hand {
+    background: rgba(227, 25, 197, 0.65);
+    width: 40%;
+  }
+
+.second-hand {
+    background: rgba(227, 25, 197, 0.9)
+}
+
+.digital {
+    margin: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 13px rgba(227, 25, 197, 0.4), 0 0 3px rgba(227, 25, 197, 0.9);
+  }
