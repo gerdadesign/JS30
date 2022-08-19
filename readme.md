@@ -12,3 +12,8 @@
 - Spent a LOT of time discovering how to make the hands different sizes and maintain position. At smaller widths, the divs kept aligning left and I eventually was able to realign them with `right: 0;`
 - I wanted to add a digital clock underneath. I found this difficult and tried many methods. I kept running into an issue that `document.getElementById('digitalTime').value` would only work for inputs, but not `p`, `div`, or `span`. Eventually, realized that is because inputs have a `value`, but this needed to use `innerHTML` instead. 
 - `toLocaleTimeString` also seems like an easier to way to get time than separating seconds, minutes, and hours? But the separation seems necessary for rotation. 
+
+## 03 CSS Variables
+###### Thursday, August 18, 2022
+- This one felt good! I extended the ideas of the exercise to also affect the color of the range selector and border radius of the image. 
+- I sunk down the rabbit hole of [cross-browser range selector styling](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/_), but it didn't allow an option to adjust the color to the left of the slider as it grows in value. After a while, I later realized that `accent-color` was all I needed for this exercise. 

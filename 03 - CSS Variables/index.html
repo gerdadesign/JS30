@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;600&family=Barlow+Condensed:wght@100;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+
+  <div class="controls">
+
+    <div class="wrapper">
+      <label for="spacing">Spacing</label>
+      <input id="spacing" type="range" name="spacing" min="0" max="200" value="6" data-sizing="px">
+    </div>
+
+    <div class="wrapper">
+      <label for="blur">Blur</label>
+      <input id="blur" type="range" name="blur" min="0" max="25" value="3" data-sizing="px">
+    </div>
+
+    <div class="wrapper">
+      <label for="border">Border radius</label>
+      <input id="border" type="range" name="border" min="0" max="500" value="30" data-sizing="px">
+    </div>
+
+    <div class="wrapper">
+      <label for="base">Base Color</label>
+      <input id="base" type="color" name="base" value="#fd9712">
+    </div>
+
+  </div>
+
+  <img src="https://picsum.photos/800/500">
+
+  <style>
+    :root {
+      --base: #fd9712;
+      --spacing: 6px;
+      --blur: 3px;
+      --border: 30px;
+    }
+
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+      border-radius: var(--border);
+    }
+
+    .hl {
+      color: var(--base);
+    }
+
+    input[type='range'] {
+      accent-color: var(--base);
+    }
+    
+    /*
+      misc styles, nothing to do with CSS variables
+    */
+
+    body {
+      text-align: center;
+      background: #333;
+      color: white;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 100;
+      font-size: 1rem;
+      letter-spacing: 0.06rem;
+    }
+
+    .controls {
+      margin-bottom: 50px;
+    }
+
+    .wrapper {
+      display: inline-block;
+      margin-right: 3%;
+      margin-bottom: 3%;
+    }
+
+    #base {
+      background: transparent;
+      border: 0;
+      padding: 0;
+      height: 1.2rem;
+    }
+    
+    img {
+      width: 80vw;
+    }
+  </style>
+
+  <script>
+    const inputs = document.querySelectorAll('.controls input');
+
+    function handleUpdate() {
+      const suffix = this.dataset.sizing || '';
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+
+  </script>
+
+</body>
+</html>
