@@ -17,3 +17,8 @@
 ###### Thursday, August 18, 2022
 - This one felt good! I extended the ideas of the exercise to also affect the color of the range selector and border radius of the image. 
 - I sunk down the rabbit hole of [cross-browser range selector styling](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/_), but it didn't allow an option to adjust the color to the left of the slider as it grows in value. After a while, I later realized that `accent-color` was all I needed for this exercise. 
+
+## 04 Array Cardio Day 1 
+###### Friday, August 19, 2022
+- This one felt pretty shaky and over my head many times. I grasped the first few examples, but as they got more complex, I couldn't really figure anything out on my own. 
+- Could not complete Exercise 6 as wikipedia kept giving me this error: `Error with Permissions-Policy header: Unrecognized origin: 'intake-analytics.wikimedia.org'.`
