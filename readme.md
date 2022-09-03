@@ -2,7 +2,8 @@
 [JavaScript 30 Day Challenge](https://JavaScript30.com)
 
 # Notes
-## 01 JavaScript Drum Kit [x](01 - JavaScript Drum Kit/index.html)
+## 01 JavaScript Drum Kit 
+[x](01 - JavaScript Drum Kit/index.html)
 ###### Monday, August 15, 2022
 - Feels like a big step from the free JavaScript intro course from codecademy.
 - How do you know which events are available to you? [HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
@@ -22,3 +23,10 @@
 ###### Friday, August 19, 2022
 - This one felt pretty shaky and over my head many times. I grasped the first few examples, but as they got more complex, I couldn't really figure anything out on my own. 
 - Could not complete Exercise 6 as wikipedia kept giving me this error: `Error with Permissions-Policy header: Unrecognized origin: 'intake-analytics.wikimedia.org'.`
+
+
+## 05 Flex Panel Gallery 
+###### Friday, September 02, 2022
+- Customized from Rae Dunn-esque text & messages to Pokemon three stage evolutions.
+- Added blur filter, but wanted to adjust it so that when the panel is closed, the background is blurred but the image and middle text are clear. I think  I needed to wrap the panel contents in a new full-height div and then add a background blur effect. 
+- I also wanted only one panel to be open at a time. Instead of closing a panel and then opening a new one, I wanted one panel's opening to automatically close other open panels. Still not sure how to do this. 
