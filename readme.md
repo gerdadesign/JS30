@@ -2,7 +2,7 @@
 [JavaScript 30 Day Challenge](https://JavaScript30.com)
 
 # Notes
-## 01 JavaScript Drum Kit
+## 01 JavaScript Drum Kit [x](01 - JavaScript Drum Kit/index.html)
 ###### Monday, August 15, 2022
 - Feels like a big step from the free JavaScript intro course from codecademy.
 - How do you know which events are available to you? [HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
