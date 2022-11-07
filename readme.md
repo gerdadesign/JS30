@@ -1,5 +1,4 @@
-﻿![](https://javascript30.com/images/JS3-social-share.png)
-[JavaScript 30 Day Challenge](https://JavaScript30.com)
+<a href="https://JavaScript30.com"><img src="https://javascript30.com/images/JS3-social-share.png"></a>
 
 # Notes
 ## 01 JavaScript Drum Kit 
